@@ -1,6 +1,6 @@
 # StartPage
 
-<img src="./Page.PNG"></img>
+<img src="./startpage.png"></img>
 
 A Browser StartPage with links to top visited websites, your local time, search bars for Google and DuckDuckGo and a newsfeed scraped from Reddit r/worldnews.
 
