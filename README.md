@@ -7,13 +7,13 @@ A Browser StartPage with links to top visited websites, your local time, search 
 ## Usage
 
 ```
-git clone https://github.com/zainsci/startpage.git
+$ git clone https://github.com/zainsci/startpage.git
 
-cd startpage
+$ cd startpage
 
-mkdir Images
+$ mkdir Images
 
-python scrape_wallpapers.py
+$ python scrape_wallpapers.py
 
 ```
 
