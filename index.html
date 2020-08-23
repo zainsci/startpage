@@ -13,11 +13,16 @@
 
   <body style="background-image: url(./Images/img0.jpg);">
     <script>
+      let images = ["https://i.redd.it/2fvgkedr5oh51.png", 
+                    "https://cdn.awwni.me/2demh.png",
+                    "https://cdn.awwni.me/2emkx.png", 
+                    "https://cdn.awwni.me/2ajtz.png", 
+                    "https://i.redd.it/ix02czxq8zc51.jpg"]
       document.querySelector(
         "body"
-      ).style.backgroundImage = `url(./Images/img${Math.floor(
-        Math.random() * 25
-      )}.jpg)`;
+      ).style.backgroundImage = `url(${images[Math.floor(
+        Math.random() * 5
+      )]}.jpg)`;
     </script>
     <main>
       <div class="search-forms">
