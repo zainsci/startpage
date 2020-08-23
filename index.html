@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>StartPage</title>
+  </head>
+
+  <body style="background-image: url(./Images/img0.jpg);">
+    <script>
+      document.querySelector(
+        "body"
+      ).style.backgroundImage = `url(./Images/img${Math.floor(
+        Math.random() * 25
+      )}.jpg)`;
+    </script>
+    <main>
+      <div class="search-forms">
+        <form
+          action="https://www.google.com/search"
+          class="google"
+          method="get"
+        >
+          <input
+            type="text"
+            name="q"
+            placeholder="Search Google"
+            autocomplete="off"
+          />
+        </form>
+        <form
+          action="https://www.duckduckgo.com/"
+          class="duckduckgo"
+          method="get"
+        >
+          <input
+            type="text"
+            name="q"
+            placeholder="Search DuckDuckGo"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+      <div class="datetime">
+        <div class="time" id="time">07:17 PM</div>
+        <div class="date" id="date">
+          <span id="month"></span> <span id="day"></span>
+        </div>
+      </div>
+      <div class="icons">
+        <a href="http://www.facebook.com"
+          ><i class="fa fa-facebook" aria-hidden="true"></i
+        ></a>
+        <a href="http://www.youtube.com"
+          ><i class="fa fa-youtube" aria-hidden="true"></i
+        ></a>
+        <a href="http://www.instagram.com"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.github.com"
+          ><i class="fa fa-github" aria-hidden="true"></i
+        ></a>
+        <a href="http://www.stackoverflow.com"
+          ><i class="fa fa-stack-overflow" aria-hidden="true"></i
+        ></a>
+        <a href="http://www.wikipedia.org"
+          ><i class="fa fa-wikipedia-w" aria-hidden="true"></i
+        ></a>
+        <a href="http://www.fmovies.to"
+          ><i class="fa fa-film" aria-hidden="true"></i
+        ></a>
+        <a href="http://www.9anime.to"
+          ><i class="fa fa-film" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.reddit.com"
+          ><i class="fa fa-reddit" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="news"></div>
+    </main>
+    <script src="./js/main.js"></script>
+    <script>
+      if (window.onerror) {
+        document.querySelector(
+          "body"
+        ).style.backgroundImage = `url(./Images/default.jpg)`;
+      }
+    </script>
+    <script src="./js/news.js"></script>
+  </body>
+</html>
